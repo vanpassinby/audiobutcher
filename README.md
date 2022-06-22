@@ -3,6 +3,8 @@ AudioButcher is a program that randomizes segments of imported audio for a defin
 
 Features: 
 
+= Presets,
+
 = 3 scrambling methods,
 
 = Backmasking (symmetrical and/or asymmetrical),
