@@ -1,5 +1,5 @@
 # AudioButcher
-AudioButcher is a program that randomizes segments of audio for a defined amount of time.
+AudioButcher is a program that randomizes segments of imported audio for a defined amount of time.
 
 Features: 
 
