@@ -14,3 +14,8 @@ Features:
 
 
 Brought to you by the AudioButcher Team: MightInvisible, osdwa, Shriki, vanpassinby & ZachMan.
+
+
+
+Executable release can be found here (currently Windows-only): https://abteam.itch.io/audiobutcher
+(Mac and Linux releases coming soon!)
