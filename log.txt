@@ -1,0 +1,42 @@
+Scrambling changes / Features:
+
+= Compensations have been changed to weight-type fade modes;
+= Added automatic and manual onset detection;
+= Added onset files;
+= Added 2 quantization modes: BPM, Onsets;
+= Added audio trimming;
+= Added segment reappearing - Each segment can now have a chance to reappear after a given amount of segments;
+= Added fade-related chances ('Apply fades before reversing', 'Fade only into pauses');
+= Added 'Folded Normal Distribution' as a scramble mode
+= Added backmask fading;
+= Added measure types for fading and repeating segments(by length or percentage);
+= Added the ability to input random seeds;
+= Double segment size has been changed from a checkbox to a % chance;
+= Added 'Backwards-only' as a stumbling mode;
+
+User interface changes / Features:
+
+= Added hotkeys;
+= The chosen time measure applies everywhere now (set to milliseconds by default);
+= Preview length options have been extended to a maximum of 60s long;
+= Ability to stop previewing anytime;
+= Preview options now have their own submenu;
+= Misc. option submenu;
+= Presets have changed a little, however v2.1.0 presets are still compatible with v2.2.0;
+= Unique filename generation (which uses UNIX timestamps);
+= The advanced tab has been redesigned;
+= Detailed error information;
+= The Github script can now run on Linux and MacOS without any further modifications;
+= More parameters are now being remembered after restarting (preview and export length + misc menu parameters);
+= The audio filename now shows up in AudioButcher's window title;
+= Added the ability to import raw data;
+= Added the ability to abort scrambling;
+
+
+Bugfixes:
+
+= Using extra spaces in variation and weight fields will not yield errors anymore;
+= Stumbled audio will no longer start playing from the beginning several times;
+= Previewing will not mess with the global audio (Other programs' sound will continue to work as intended);
+= Closing the program now works as intended;
+= You can now open files from folders whose name contains non-ANSI characters;
