@@ -5,7 +5,7 @@ Features:
 
 = Presets,
 
-= 3 scrambling methods,
+= 4 scrambling methods,
 
 = Backmasking (symmetrical and/or asymmetrical),
 
