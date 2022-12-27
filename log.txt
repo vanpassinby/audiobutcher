@@ -1,3 +1,4 @@
+[v2.2.0]
 Scrambling changes / Features:
 
 = Compensations have been changed to weight-type fade modes;
@@ -40,3 +41,18 @@ Bugfixes:
 = Previewing will not mess with the global audio (Other programs' sound will continue to work as intended);
 = Closing the program now works as intended;
 = You can now open files from folders whose name contains non-ANSI characters;
+
+[v2.2.1]
+
+Changes/Features:
+
+= Added "start onsets" and start onset files -- they kind of work like average start times, but for onset files; (Keep in mind that just like start times, they are optional)
+= Added the ability to import MP3 files without the need of FFmpeg*;
+*Installing FFmpeg is still recommended though, as importing MP3 files is faster that way + more audio formats are supported;
+
+Bugfixes:
+
+= The "Minimum fade backmask" parameter now works as intended;
+= Got rid of the long pause between scrambling and previewing;
+= The lognormal distribution mode is no longer affected by the time measure mode;
+= The folded normal mode is​ now affected by the time measure mode instead;
