@@ -1,4 +1,5 @@
 [v2.2.0]
+
 Scrambling changes / Features:
 
 = Compensations have been changed to weight-type fade modes;
@@ -33,7 +34,6 @@ User interface changes / Features:
 = Added the ability to import raw data;
 = Added the ability to abort scrambling;
 
-
 Bugfixes:
 
 = Using extra spaces in variation and weight fields will not yield errors anymore;
@@ -41,6 +41,7 @@ Bugfixes:
 = Previewing will not mess with the global audio (Other programs' sound will continue to work as intended);
 = Closing the program now works as intended;
 = You can now open files from folders whose name contains non-ANSI characters;
+
 
 [v2.2.1]
 
@@ -56,3 +57,36 @@ Bugfixes:
 = Got rid of the long pause between scrambling and previewing;
 = The lognormal distribution mode is no longer affected by the time measure mode;
 = The folded normal mode is​ now affected by the time measure mode instead;
+
+
+[v2.2.2]
+
+= Minor bugfixes (stumbling, note extension);
+= Ignore onsets checkbox turned to "Erase onsets" button;
+= Advanced tab redesign;
+= Added more import formats (Preferences > Show more import formats);
+= Advanced: changed the stumbling mode into a weight system, like the fade mode weights;
+= Advanced: added "Fade cutoffs";
+= File menu: added a "Preset backup" submenu;
+= File menu:  Added a "Restore the last seed" option for random seeds;
+= Removed raw data import;
+= Python script: enabling AB_DISABLE_SIMPLEAUDIO doesn't remove ability to preview;
+= Python script: added AB_DONT_USE_B64_ICON;
+= Added "Percent change" and "Speed multiplier" speed modes;
+= Added Python info into the About box;
+= Stumbling: Added "Chance to deviate";
+= About: The license is now hosted on the Internet;
+= .ABP files can now be opened via dragging the file over the executable icon (not to be confused with the program window)
+
+
+[v2.2.3]
+
+= Fixed start onsets; 
+= Speed and start time weights entry can be left empty for equal weighting;
+= Separated start onset list file from "usual" onset list;
+= Slightly improved the BPM quantization mode;
+= Added the ability to drag & drop files directly to AB window: specifically audio, preset and both types of onset files;
+= Added the ability to export audio in FLAC;
+= Added the ability to specify note extension crossfade;
+= The pared version of AB now contains the "aubio" Python module which allows onset detection (however its detection quality is much lower).
+= Bugfix: The "Manage onsets" window now reappears after editing onsets;
