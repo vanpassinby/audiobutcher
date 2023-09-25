@@ -96,10 +96,10 @@ Bugfixes:
 
 This version has been created from scratch. However, here's some differences from AB2:
 
-= Reworked GUI
-= Added looping
-= Added segment muting
-= Added skipping to stumbling
-= Removed fade compensation modes
-= Added more options to note extension
-= Added more export formats
+= Reworked GUI;
+= Added looping;
+= Added segment muting;
+= Added skipping to stumbling;
+= Removed fade compensation modes;
+= Added more options to note extension;
+= Added more export formats.
