@@ -90,3 +90,16 @@ Bugfixes:
 = Added the ability to specify note extension crossfade;
 = The pared version of AB now contains the "aubio" Python module which allows onset detection (however its detection quality is much lower).
 = Bugfix: The "Manage onsets" window now reappears after editing onsets;
+
+
+[v3.0.0]
+
+This version has been created from scratch. However, here's some differences from AB2:
+
+= Reworked GUI
+= Added looping
+= Added segment muting
+= Added skipping to stumbling
+= Removed fade compensation modes
+= Added more options to note extension
+= Added more export formats
