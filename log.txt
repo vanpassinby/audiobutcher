@@ -103,3 +103,37 @@ This version has been created from scratch. However, here's some differences fro
 = Removed fade compensation modes;
 = Added more options to note extension;
 = Added more export formats.
+
+
+[v4.0.0]
+= AB has been rewritten from scratch;
+= GUI has been completely reworked;
+= AB's icon has been updated;
+= Available on-screen option hints;
+= FFmpeg now can be located without changing the system path variable;
+= Certain parameters, previously accessible from source code, now can be changed via system variables;
+= Insane performance improvements;
+= Partial generation - It allows you to change parameters within one scramble;
+= New random distribution - Exponential;
+= Reappeared segments now can reappear multiple times by certain chance;
+= Main speed and speed variations are now separated;
+= Length scaling for slowed down/sped up segments;
+= Average start time parameters has been moved to Pattern tab;
+= Backmasking and Note extension are now merged into the more universal Sustain parameters;
+= 5 Sustain parameter sets, with mini-presets menu accessible via right click;
+= Stumbling has been replaced by Loop and Pattern parameters;
+= Added Framing mode - it overrides certain AB behaviors, making the scrambler work similarly to Spectrasonics' Stylus RMX;
+= AB3 "looping" has been removed, now Framing is its alternative;
+= Onsets (or rather, audio between them) are now called Slices;
+= You can now watch the length statistics for Slices;
+= Better way to control where Alternative slices (former Start onsets) are used;
+= Added new slice (onset) detection methods with sensitivity support: One spectrogram-based (Standard), and two amplitude-based (RMS and STE).
+= The old onset detection method is still available as "Classic";
+= "Pared" version does not use the aubio library anymore, but it does support RMS and STE onset detection modes;
+= You can now import a MIDI file as an onset file via "Edit onsets" window;
+= Segment placement position shifting and quantization;
+= Automatic segment volume change options;
+= Segment intro loop;
+= Small parameters to tweak certain behaviors;
+= Implemented ABPL (AudioButcher Programming Language), which allows creating complex dependencies between segment parameters;
+= The executable release is now running in Python 3.11, and is available on both Windows and macOS!
