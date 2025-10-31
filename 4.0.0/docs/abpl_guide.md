@@ -193,6 +193,9 @@ There are two types of variables in ABPL:
   * `frame_by_idx [idx] [paramter]`: Get information about the frame by its index (ref AB *Framing*).
     * Parameter can be `begin`, `duration` and `content_dur`. Names are self-explationary, all are measured in samples.
     * Be careful: Don't use this when `Framing` is disabled, with non-existent frame indexes, or non-existent parameters.
+  * `segment_end_pos [idx]`. Get segment body end position in original audio. This includes speed change.
+    * For current segment, you can use `segment_end_pos segment_idx`.
+    * This is unavailable in original AB 4.0 October Release.
 
 ### Config reading
 * `from_config`, `from_config_skip`, `from_config_sustain`: These have similar usage and particular qualities.
