@@ -41,13 +41,20 @@ def quantize_length(state: ScramblerState, segment: SegmentInfo):
     segment.duration = math.ceil((segment_end - segment.begin) / segment.speed)
 
 
+def calc_segment_end_pos(segment: SegmentInfo):
+    return segment.begin + math.ceil(segment.duration * segment.speed)
+
+
 def fix_length(state: ScramblerState, segment: SegmentInfo):
-    if segment.begin + math.ceil(segment.duration * segment.speed) > state.audio.length:
+    end_position = calc_segment_end_pos(segment)
+
+    if end_position > state.audio.length:
         old_dur = segment.duration
         segment.duration = int((state.audio.length - segment.begin) / segment.speed)
         print("Segment duration shortened from", old_dur, "to", segment.duration)
-        if segment.is_in_loop:
-            state.loop_reset = True
+
+    if end_position >= state.audio.length and segment.is_in_loop:
+        state.loop_reset = True
 
 
 def find_last_slice(state: ScramblerState, segment: SegmentInfo):

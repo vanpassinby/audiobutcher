@@ -76,7 +76,8 @@ def detect_slices(window: "MainWindow", selection=None, from_current=True, silen
             audio = Audio.load(audio_path)
 
         slices = onset_function(audio, **sens_arg)
-        root.get_selected_slices().override(slices)
+        slc_data = root.glob_state.slices if selection == 0 else root.glob_state.slices_alt
+        slc_data.override(slices)
 
         note_alt = "alternative " if selection == 1 else ""
         window.update_gui()

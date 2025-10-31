@@ -49,5 +49,5 @@ library = {
     "quantize_forw": cmd_quantize(direction=2),
     "quantize_back": cmd_quantize(direction=1),
 
-    "ab_quantize_length": cmd_len_auto_quan
+    "ab_quantize_length": cmd_len_auto_quan,
 }

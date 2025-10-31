@@ -1,7 +1,7 @@
 from abpl.core import *
 from abpl.abpl_main import read_command
 from abpl.lib_vars import PROPS_ALL
-from scrambler.scr_tools import get_k_speed, get_frame_info
+from scrambler.scr_tools import get_k_speed, get_frame_info, calc_segment_end_pos
 
 
 def get_segment(state: ScriptState, idx: int):
@@ -68,7 +68,9 @@ library = {
     "prop_by_idx":      lambda s: prop_by_idx(s),
     "onset_by_idx":     lambda s: onset_by_idx(s),
     "onset_by_idx_alt": lambda s: onset_by_idx(s, True),
-    "frame_by_idx":     lambda s: frame_by_idx(s)
+    "frame_by_idx":     lambda s: frame_by_idx(s),
+    "segment_end_pos":  lambda s: calc_segment_end_pos(get_segment(s, round(read_command(s))))
+
 }
 
 for prop in PROPS_ALL:
