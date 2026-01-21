@@ -213,7 +213,7 @@ There are two types of variables in ABPL:
 
 ### Inter-sessional
 * **Constants**. Constant works as a variable, however it's available during the entire process of scrambling.
-  * `const [name]`: Access a constant.
+  * `const [name]`: Access a constant. If constant does not exist, it returns 0.
   * `const_set [name] [value]`: Assign constant value.
 * **Marks**. Segments can be marked with a special keyword, visible during the entire scrambling process.
   * `has_mark [seg_idx] [mark_name]`: Does segment at index `seg_idx` has mark `mark_name`.
