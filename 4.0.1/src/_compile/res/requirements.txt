@@ -1,0 +1,11 @@
+pyinstaller
+
+librosa
+pillow
+pretty_midi
+psutil
+simpleaudio-patched
+tkinterdnd2
+
+numpy
+soundfile
